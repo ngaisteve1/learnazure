@@ -15,6 +15,7 @@
         <th>Date</th>
         <th>Title</th>
         <th>Tags</th>
+        <th>Resource Group</th>
       </tr>
     </thead>
     <tbody>
@@ -23,39 +24,45 @@
         <td><a href="https://helloworld.ashywater-42a9ab26.australiaeast.azurecontainerapps.io/">
             Deployed HelloWorld Web App in Azure Container Apps</a></td>
         <td>Azure Container Apps, Hello World</td>
+        <td></td>
       </tr>
       <tr>
         <td>2022-07-22</td>
         <td><a href="https://net6webapidockerapp.azurewebsites.net/WeatherForecast">
           Deployed default WeatherForecast Web API from Visual Studio Community to Azure > Azure App Service Container</a></td>
         <td>Azure Container Apps, Web Api, NET 6, WeatherForecast, Visual Studio</td>
+        <td>ContosoUniWebApp_group</td>
       </tr>
       <tr>
         <td>2022-07-21</td>
         <td><a href="https://contosouniwebapp.azurewebsites.net/">
           Deployed Contoso University Web App in Visual Studio to Azure App Service (Linux) which connects to Azure SQL database</a></td>
         <td>Azure App Service, Linux, Razor Pages, Contoso University, Visual Studio, Azure SQL database</td>
+        <td>ContosoUniWebApp_group</td>
       </tr>
       <tr>
         <td>2022-07-20</td>
         <td><a href="https://red-coast-0799a1210.1.azurestaticapps.net/">
           Deployed my sample resume at Github page and Azure Static Web App using GitHub Actions Workflow (CI/CD).</a></td>
         <td>Azure Static Web App, Github page, GitHub Actions, CI/CD, Visual Studio</td>
+        <td>Free</td>
       </tr>
       <tr>
         <td>2022-07-20</td>
         <td><a href="https://kind-beach-0e279dd10.1.azurestaticapps.net/">
           Deployed Avengers VueJs Web App to Azure Static Web App using GitHub Actions Workflow (CI/CD).</a></td>
         <td>Azure Static Web App, GitHub Actions, CI/CD, Visual Studio, VueJs</td>
+        <td>Free</td>
       </tr>
     </tbody>
-    <tfoot>
+    <!-- <tfoot>
         <tr>
           <th>Date</th>
           <th>Title</th>
           <th>Tags</th>
+          <th>Resource Group</th>
         </tr>
-    </tfoot>
+    </tfoot> -->
   </table>
 </body>
 </html>
@@ -69,4 +76,25 @@
       }
     );
   });
+
+  const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+  });
+
+  show_hide_column(3, false);
+
+  if(params.id == 's'){
+    show_hide_column(3, true);
+  }
+
+  const show_hide_column = (col_no, do_show) => {
+    var rows = document.getElementById('tbl').rows;
+
+    for (var row = 0; row < rows.length; row++) {
+        var cols = rows[row].cells;
+        if (col_no >= 0 && col_no < cols.length) {
+            cols[col_no].style.display = do_show ? '' : 'none';
+        }
+    }
+}
 </script>
