@@ -81,13 +81,13 @@
     get: (searchParams, prop) => searchParams.get(prop),
   });
 
-  show_hide_column(3, false);
+  showHideColumn(3, false);
 
   if(params.id == 's'){
-    show_hide_column(3, true);
+    showHideColumn(3, true);
   }
 
-  const show_hide_column = (col_no, do_show) => {
+  function showHideColumn(col_no, do_show) {
     var rows = document.getElementById('tbl').rows;
 
     for (var row = 0; row < rows.length; row++) {
