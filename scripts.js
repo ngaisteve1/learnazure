@@ -13,11 +13,13 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 showHideColumn(3, false);
 showHideColumn(4, false);
 showHideColumn(5, false);
+showHideColumn(6, false);
 
 if(params.id == 's'){
   showHideColumn(3, true);
   showHideColumn(4, true);
   showHideColumn(5, true);
+  showHideColumn(6, true);
 }
 
 function showHideColumn(col_no, do_show) {
