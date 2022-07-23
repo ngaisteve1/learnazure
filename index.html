@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steve Ngai - Learn Azure</title>
+  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+</head>
+<body>
+  <table id="tbl" class="display" style="width:100%">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Title</th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2022-07-20</td>
+        <td><a href="https://helloworld.ashywater-42a9ab26.australiaeast.azurecontainerapps.io/">
+            Deployed HelloWorld Web App in Azure Container Apps</a></td>
+        <td>Azure Container Apps, Hello World</td>
+      </tr>
+      <tr>
+        <td>2022-07-22</td>
+        <td><a href="https://net6webapidockerapp.azurewebsites.net/WeatherForecast">
+          Deployed default WeatherForecast Web API from Visual Studio Community to Azure > Azure App Service Container</a></td>
+        <td>Azure Container Apps, Web Api, NET 6, WeatherForecast, Visual Studio</td>
+      </tr>
+      <tr>
+        <td>2022-07-21</td>
+        <td><a href="https://contosouniwebapp.azurewebsites.net/">
+          Deployed Contoso University Web App in Visual Studio to Azure App Service (Linux) which connects to Azure SQL database</a></td>
+        <td>Azure App Service, Linux, Razor Pages, Contoso University, Visual Studio, Azure SQL database</td>
+      </tr>
+      <tr>
+        <td>2022-07-20</td>
+        <td><a href="https://red-coast-0799a1210.1.azurestaticapps.net/">
+          Deployed my sample resume at Github page and Azure Static Web App using GitHub Actions Workflow (CI/CD).</a></td>
+        <td>Azure Static Web App, Github page, GitHub Actions, CI/CD, Visual Studio</td>
+      </tr>
+      <tr>
+        <td>2022-07-20</td>
+        <td><a href="https://kind-beach-0e279dd10.1.azurestaticapps.net/">
+          Deployed Avengers VueJs Web App to Azure Static Web App using GitHub Actions Workflow (CI/CD).</a></td>
+        <td>Azure Static Web App, GitHub Actions, CI/CD, Visual Studio, VueJs</td>
+      </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+          <th>Tags</th>
+        </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#tbl').DataTable(
+      {
+        order: [[0, 'desc']],
+      }
+    );
+  });
+</script>
