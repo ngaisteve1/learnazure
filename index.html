@@ -16,6 +16,7 @@
         <th>Title</th>
         <th>Tags</th>
         <th>Resource Group</th>
+        <th>Resource</th>
         <th>Code</th>
       </tr>
     </thead>
@@ -27,6 +28,7 @@
         <td>Azure Container Apps, Hello World</td>
         <td>ContainerAppR</td>
         <td></td>
+        <td></td>
       </tr>
       <tr>
         <td>2022-07-22</td>
@@ -34,6 +36,7 @@
           Deployed default WeatherForecast Web API from Visual Studio Community to Azure > Azure App Service Container</a></td>
         <td>Azure Container Apps, Web Api, NET 6, WeatherForecast, Visual Studio</td>
         <td>ContosoUniWebApp_group</td>
+        <td>App Service: net6webapidockerapp</td>
         <td><a href="https://github.com/ngaisteve1/NET6WebApiDockerApp">Code</a></td>
       </tr>
       <tr>
@@ -42,6 +45,7 @@
           Deployed Contoso University Web App in Visual Studio to Azure App Service (Linux) which connects to Azure SQL database</a></td>
         <td>Azure App Service, Linux, Razor Pages, Contoso University, Visual Studio, Azure SQL database</td>
         <td>ContosoUniWebApp_group</td>
+        <td>App Service: ContosoUniWebApp</td>
         <td><a href="https://github.com/jasontaylordev/NorthwindTraders">Code</a></td>
       </tr>
       <tr>
@@ -50,6 +54,7 @@
           Deployed my sample resume at <a href="https://ngaisteve1.github.io/myresume/">Github page</a> and <a href="https://red-coast-0799a1210.1.azurestaticapps.net/">Azure Static Web App</a> using <a href="https://github.com/ngaisteve1/myresume/actions">GitHub Actions Workflow (CI/CD)</a>.</td>
         <td>Azure Static Web App, Github page, GitHub Actions, CI/CD, Visual Studio</td>
         <td>Free</td>
+        <td>Static Web App: Resume</td>
         <td><a href="https://github.com/ngaisteve1/myresume/">Code</a></td>
       </tr>
       <tr>
@@ -57,6 +62,7 @@
         <td>Deployed Avengers VueJs Web App to <a href="https://kind-beach-0e279dd10.1.azurestaticapps.net/">Azure Static Web App</a> using <a href="https://github.com/ngaisteve1/vue.superhero/actions">GitHub Actions Workflow (CI/CD)</a>.</td>
         <td>Azure Static Web App, GitHub Actions, CI/CD, Visual Studio, VueJs</td>
         <td>Free</td>
+        <td>Static Web App: Avengers</td>
         <td><a href="https://github.com/ngaisteve1/vue.superhero/">Code</a></td>
       </tr>
     </tbody>
@@ -77,33 +83,4 @@
 </html>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-<script>
-  $(document).ready(function () {
-    $('#tbl').DataTable(
-      {
-        order: [[0, 'desc']],
-      }
-    );
-  });
-
-  const params = new Proxy(new URLSearchParams(window.location.search), {
-    get: (searchParams, prop) => searchParams.get(prop),
-  });
-
-  showHideColumn(3, false);
-
-  if(params.id == 's'){
-    showHideColumn(3, true);
-  }
-
-  function showHideColumn(col_no, do_show) {
-    var rows = document.getElementById('tbl').rows;
-
-    for (var row = 0; row < rows.length; row++) {
-        var cols = rows[row].cells;
-        if (col_no >= 0 && col_no < cols.length) {
-            cols[col_no].style.display = do_show ? '' : 'none';
-        }
-    }
-}
-</script>
+<script src="scripts.js"></script>
