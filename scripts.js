@@ -16,12 +16,14 @@ showHideColumn(3, false);
 showHideColumn(4, false);
 showHideColumn(5, false);
 showHideColumn(6, false);
+showHideColumn(7, false);
 
 if(params.id == 's'){
   showHideColumn(3, true);
   showHideColumn(4, true);
   showHideColumn(5, true);
   showHideColumn(6, true);
+  showHideColumn(7, true);
 }
 
 function showHideColumn(col_no, do_show) {
