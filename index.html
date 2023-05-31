@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,21 @@
   <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    table.dataTable tr.odd { background-color: #DCDBD3 }
+    table.dataTable tr.odd {
+      background-color: #DCDBD3
+    }
 
     a {
-      text-decoration:none;color:blue;
+      text-decoration: none;
+      color: blue;
     }
   </style>
 </head>
+
 <body>
   <p style="text-align:center">
-    This page is from <a href="http://resume.findingsteve.net/">Steve Ngai Resume / CV</a> <a  href="https://ngaisteve1.github.io/learnazure/?id=s">:)</a>
+    This page is from <a href="http://resume.findingsteve.net/">Steve Ngai Resume / CV</a> <a
+      href="https://ngaisteve1.github.io/learnazure/?id=s">:)</a>
   </p>
   <table id="tbl" class="display" style="width:100%">
     <thead>
@@ -34,24 +40,45 @@
     </thead>
     <tbody>
       <tr>
+        <td>2023-05-01</td>
+        <td>
+          Created two demo .NET 6 projects in a solution: a web app using Blazor Server, which sends web API requests
+          (query
+          string and request body) to Azure Functions and receives a string response to display on the web app. Also
+          added Azure
+          AppInsights to monitor web api request, exception and performance.</td>
+        <td>C#, NET 6, Azure Functions, Azure AppInsights, Blazor Server</td>
+        <td></td>
+        <td></td>
+        <td><a href="https://github.com/ngaisteve1/AzureFunctionsDemo">Code</a></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
         <td>2022-08-01</td>
         <td>
-          Successfully deployed eShopOnContainers microservices of all 21 containers to Docker Desktop using Docker Compose and up all the web apps and health check app and debug it</td>
+          Successfully deployed eShopOnContainers microservices of all 21 containers to Docker Desktop using Docker
+          Compose and up all the web apps and health check app and debug it</td>
         <td>C#, NET 6, Docker, Docker Compose, Microservices, Api gateway</td>
         <td></td>
         <td></td>
-        <td><a href="https://github.com/dotnet-architecture/eShopOnContainers">Code</a> | <a href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Windows-setup#memory-and-cpu">Tutorial</a></td>
+        <td><a href="https://github.com/dotnet-architecture/eShopOnContainers">Code</a> | <a
+            href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Windows-setup#memory-and-cpu">Tutorial</a>
+        </td>
         <td>Bug: Clean/Purge data and Factory reset and let it run overnight</td>
         <td><a href="https://youtu.be/qazYWpOKLU8">Video</a></td>
       </tr>
       <tr>
         <td>2022-07-30</td>
         <td>
-          All 63 unit tests and functional tests passed. Deployed eShopOnContainers microservices of 21 containers to Docker Desktop using Docker Compose</td>
+          All 63 unit tests and functional tests passed. Deployed eShopOnContainers microservices of 21 containers to
+          Docker Desktop using Docker Compose</td>
         <td>C#, NET 6, Docker, Docker Compose, Microservices, Api gateway</td>
         <td></td>
         <td></td>
-        <td><a href="https://github.com/dotnet-architecture/eShopOnContainers">Code</a> | <a href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Windows-setup#memory-and-cpu">Tutorial</a></td>
+        <td><a href="https://github.com/dotnet-architecture/eShopOnContainers">Code</a> | <a
+            href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Windows-setup#memory-and-cpu">Tutorial</a>
+        </td>
         <td>Auto run from Visual Studio, restore SPA with npm i, restart window.</td>
         <td><a href="">Video</a></td>
       </tr>
@@ -62,7 +89,9 @@
         <td>C#, NET 6, Docker, SQL Server</td>
         <td></td>
         <td></td>
-        <td><a href="https://findingsteve.visualstudio.com/_git/v5-dockerComposeAspNetCpre">Code</a> | <a href="https://dev.to/moe23/step-by-step-guide-on-utilising-docker-compose-with-asp-net-core-sql-server-2e54">Tutorial</a></td>
+        <td><a href="https://findingsteve.visualstudio.com/_git/v5-dockerComposeAspNetCpre">Code</a> | <a
+            href="https://dev.to/moe23/step-by-step-guide-on-utilising-docker-compose-with-asp-net-core-sql-server-2e54">Tutorial</a>
+        </td>
         <td></td>
         <td><a href="https://youtu.be/-xnEPRsetIM">Video</a></td>
       </tr>
@@ -80,8 +109,10 @@
       <tr>
         <td>2022-07-25</td>
         <td>
-            Deployed <a href="https://devopsstarterwin3.azurewebsites.net/">Demo Web App</a> with Azure DevOps Starter (Window <i class="fa fa-info-circle tool" title="Linux doesn't work"></i>) and Azure DevOps</td>
-        <td>Azure DevOps Starter, Window, C#, MVC, ASP.NET Core 3.1, Azure DevOps (Build Pipelines CI and Release Pipelines CD), ARM (Azure Resource Manager), Infrastructure as Code (IaC)</td>
+          Deployed <a href="https://devopsstarterwin3.azurewebsites.net/">Demo Web App</a> with Azure DevOps Starter
+          (Window <i class="fa fa-info-circle tool" title="Linux doesn't work"></i>) and Azure DevOps</td>
+        <td>Azure DevOps Starter, Window, C#, MVC, ASP.NET Core 3.1, Azure DevOps (Build Pipelines CI and Release
+          Pipelines CD), ARM (Azure Resource Manager), Infrastructure as Code (IaC)</td>
         <td>VstsRG-findingsteve-e004</td>
         <td>DevOps Starter: DevOpsStarterWin3</td>
         <td><a href="https://findingsteve.visualstudio.com/_git/DevOpsStarterWin3">Code</a></td>
@@ -91,19 +122,23 @@
       <tr>
         <td>2022-07-24</td>
         <td>
-            Deployed <a href="https://weatherforecastdockerhub.azurewebsites.net/WeatherForecast">WeatherForecast Web API</a> from Azure App Service (Linux) which pull from Docker Hub</td>
+          Deployed <a href="https://weatherforecastdockerhub.azurewebsites.net/WeatherForecast">WeatherForecast Web
+            API</a> from Azure App Service (Linux) which pull from Docker Hub</td>
         <td>Azure App Service, Linux, C#, Web Api, NET 6, WeatherForecast, Docker, Docker Hub</td>
         <td>ContainerAppR</td>
         <td>App Service: weatherforecastdockerhub</td>
         <td></td>
-        <td><a href="https://github.com/ngaisteve1/learn/blob/main/Deployed%20WeatherForecast%20Web%20API%20from%20Azure%20App%20Service%20(Linux)%20which%20pull%20from%20Docker%20Hub.md">Flow</a></td>
+        <td><a
+            href="https://github.com/ngaisteve1/learn/blob/main/Deployed%20WeatherForecast%20Web%20API%20from%20Azure%20App%20Service%20(Linux)%20which%20pull%20from%20Docker%20Hub.md">Flow</a>
+        </td>
         <td><a href="https://youtu.be/n-MiXzIdEOE">Video</a></td>
       </tr>
       <tr>
         <td>2022-07-20</td>
         <td>
-            Deployed <a href="https://helloworld.ashywater-42a9ab26.australiaeast.azurecontainerapps.io/">HelloWorld Web App</a> in Azure Container Apps</td>
-        <td>Azure Container Apps, Hello World, Docker,  HTML</td>
+          Deployed <a href="https://helloworld.ashywater-42a9ab26.australiaeast.azurecontainerapps.io/">HelloWorld Web
+            App</a> in Azure Container Apps</td>
+        <td>Azure Container Apps, Hello World, Docker, HTML</td>
         <td>ContainerAppR</td>
         <td></td>
         <td></td>
@@ -113,39 +148,51 @@
       <tr>
         <td>2022-07-22</td>
         <td>
-          Deployed <a href="https://net6webapidockerapp.azurewebsites.net/WeatherForecast">WeatherForecast Web API</a> from Visual Studio Community to Azure > Azure App Service Container</td>
+          Deployed <a href="https://net6webapidockerapp.azurewebsites.net/WeatherForecast">WeatherForecast Web API</a>
+          from Visual Studio Community to Azure > Azure App Service Container</td>
         <td>Azure Container Apps, Web Api, NET 6, WeatherForecast, Visual Studio, Docker, C#, Docker Registry</td>
         <td>ContosoUniWebApp_group</td>
         <td>App Service: net6webapidockerapp</td>
         <td><a href="https://github.com/ngaisteve1/NET6WebApiDockerApp">Code</a></td>
-        <td><a href="https://github.com/ngaisteve1/learn/blob/main/Deployed%20WeatherForecast%20Web%20API%20from%20Visual%20Studio%20Community%20to%20Azure%20App%20Service%20Container.md">Flow</a></td>
+        <td><a
+            href="https://github.com/ngaisteve1/learn/blob/main/Deployed%20WeatherForecast%20Web%20API%20from%20Visual%20Studio%20Community%20to%20Azure%20App%20Service%20Container.md">Flow</a>
+        </td>
         <td></td>
       </tr>
       <tr>
         <td>2022-07-21</td>
         <td>
-          Deployed <a href="https://contosouniwebapp.azurewebsites.net/">Contoso University Web App</a> in Visual Studio to Azure App Service (Linux) which connects to Azure SQL database</td>
+          Deployed <a href="https://contosouniwebapp.azurewebsites.net/">Contoso University Web App</a> in Visual Studio
+          to Azure App Service (Linux) which connects to Azure SQL database</td>
         <td>Azure App Service, Linux, Razor Pages, Contoso University, Visual Studio, Azure SQL database, C#</td>
         <td>ContosoUniWebApp_group</td>
         <td>App Service: ContosoUniWebApp</td>
         <td><a href="https://github.com/jasontaylordev/NorthwindTraders">Code</a></td>
-        <td><a href="https://github.com/ngaisteve1/learn/blob/main/Deployed%20Contoso%20University%20Web%20App%20in%20Visual%20Studio%20to%20Azure%20App%20Service%20(Linux)%20which%20connects%20to%20Azure%20SQL%20database.md">Flow</a></td>
+        <td><a
+            href="https://github.com/ngaisteve1/learn/blob/main/Deployed%20Contoso%20University%20Web%20App%20in%20Visual%20Studio%20to%20Azure%20App%20Service%20(Linux)%20which%20connects%20to%20Azure%20SQL%20database.md">Flow</a>
+        </td>
         <td><a href="https://youtu.be/_5oJyOpYxUw">Video</a></td>
       </tr>
       <tr>
         <td>2022-07-20</td>
         <td>
-          Deployed my sample resume at <a href="https://ngaisteve1.github.io/myresume/">Github page</a> and <a href="https://red-coast-0799a1210.1.azurestaticapps.net/">Azure Static Web App</a> using <a href="https://github.com/ngaisteve1/myresume/actions">GitHub Actions Workflow (CI / CD)</a>.</td>
+          Deployed my sample resume at <a href="https://ngaisteve1.github.io/myresume/">Github page</a> and <a
+            href="https://red-coast-0799a1210.1.azurestaticapps.net/">Azure Static Web App</a> using <a
+            href="https://github.com/ngaisteve1/myresume/actions">GitHub Actions Workflow (CI / CD)</a>.</td>
         <td>Azure Static Web App, GitHub, Github page, GitHub Actions, CI / CD, Visual Studio, PUG, SCSS</td>
         <td>Free</td>
         <td>Static Web App: Resume</td>
         <td><a href="https://github.com/ngaisteve1/myresume/">Code</a></td>
-        <td><a href="https://github.com/ngaisteve1/learn/blob/main/Deployed%20my%20sample%20resume%20at%20Github%20page%20and%20Azure%20Static%20Web%20App%20using%20GitHub%20Actions%20Workflow%20(CICD).md">Flow</a></td>
+        <td><a
+            href="https://github.com/ngaisteve1/learn/blob/main/Deployed%20my%20sample%20resume%20at%20Github%20page%20and%20Azure%20Static%20Web%20App%20using%20GitHub%20Actions%20Workflow%20(CICD).md">Flow</a>
+        </td>
         <td></td>
       </tr>
       <tr>
         <td>2022-07-20</td>
-        <td><a href="https://youtu.be/bUyhjft_2xc">Created</a> and deployed Avengers VueJs Web App to <a href="https://kind-beach-0e279dd10.1.azurestaticapps.net/">Azure Static Web App</a> using <a href="https://github.com/ngaisteve1/vue.superhero/actions">GitHub Actions Workflow (CI / CD)</a>.</td>
+        <td><a href="https://youtu.be/bUyhjft_2xc">Created</a> and deployed Avengers VueJs Web App to <a
+            href="https://kind-beach-0e279dd10.1.azurestaticapps.net/">Azure Static Web App</a> using <a
+            href="https://github.com/ngaisteve1/vue.superhero/actions">GitHub Actions Workflow (CI / CD)</a>.</td>
         <td>Azure Static Web App, GitHub, GitHub Actions, CI, CD, Visual Studio, VueJs, SASS</td>
         <td>Free</td>
         <td>Static Web App: Avengers</td>
@@ -164,6 +211,7 @@
     </tfoot> -->
   </table>
 </body>
+
 </html>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
