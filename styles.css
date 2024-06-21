@@ -1,0 +1,15 @@
+
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px; /* Adjust font size for mobile */
+    }
+  }
+
+  table.dataTable tr.odd {
+    background-color: #DCDBD3
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+  }
