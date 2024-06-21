@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steve Ngai - Learn Azure</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- DataTables CSS -->
   <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -15,24 +16,25 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+
   <!-- DataTables JS -->
   <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
-  
+
   <!-- Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  
+
   <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- Custom CSS -->
   <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
   <p style="text-align:center">
     This page is from <a href="http://resume.findingsteve.net/">Steve Ngai Resume / CV</a> <a
       href="https://ngaisteve1.github.io/learnazure/?id=s">:)</a>
-  </p>  
+  </p>
   <!-- Your HTML content, including the table structure -->
   <table id="tbl" class="display" style="width:100%">
     <thead>
@@ -52,16 +54,16 @@
 
   <div id="popup" class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Log</h5>
-                <button type="button" class="close" id="closePopup" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>
-      <pre><code>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Log</h5>
+          <button type="button" class="close" id="closePopup" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+          <pre><code>
 Initializing an app to run on Azure (azd init)
 
 ? How do you want to initialize your app? Use code in the current directory
@@ -152,16 +154,16 @@ Aspire Dashboard: https://aspire-dashboard.ext.proudcliff-xxx.southeastasia.azur
 
 SUCCESS: Your up workflow to provision and deploy to Azure completed in 11 minutes 1 second.
 PS C:\dotnet\sample\eShop\src\eShop.AppHost>
-</code></pre>					
-      </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" id="closePopupFooter">Close</button>
-            </div>
+          </code></pre>
+          </p>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="closePopupFooter">Close</button>
+        </div>
+      </div>
     </div>
-</div>
-<script src="scripts.js"></script>
+  </div>
+  <script src="scripts.js"></script>
 </body>
-</html>
 
+</html>
