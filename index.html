@@ -5,12 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steve Ngai - Learn Azure</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">  
+
   <!-- DataTables CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
   <!-- DataTables JS -->
   <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+  
+  <!-- Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+
   <style>
     table.dataTable tr.odd {
       background-color: #DCDBD3
@@ -44,13 +55,125 @@
     </tbody>
   </table>
 
+  <div id="popup" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Popup Title</h5>
+                <button type="button" class="close" id="closePopup" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+      <pre><code>
+Initializing an app to run on Azure (azd init)
+
+? How do you want to initialize your app? Use code in the current directory
+
+(✓) Done: Scanning app code in current directory
+
+Detected services:
+
+.NET (Aspire)
+Detected in: C:\dotnet\sample\eShop\src\eShop.AppHost\eShop.AppHost.csproj
+
+azd will generate the files necessary to host your app on Azure using Azure Container Apps.
+
+? Select an option Confirm and continue initializing my app
+? Enter a new environment name: [? for help] eshopdev
+
+? Enter a new environment name: eshopdev
+
+Generating files to run your app on Azure:
+
+(✓) Done: Generating ./azure.yaml
+(✓) Done: Generating ./next-steps.md
+
+SUCCESS: Your app is ready for the cloud!
+You can provision and deploy your app to Azure by running the azd up command in this directory. For more information on configuring your app, see ./next-steps.md
+PS C:\dotnet\sample\eShop\src\eShop.AppHost> azd up
+? Select an Azure Subscription to use:  1. Visual Studio Professional Subscription
+? Select an Azure location to use: 16. (Asia Pacific) Southeast Asia (southeastasia)
+
+Packaging services (azd package)
+
+Provisioning Azure resources (azd provision)
+Provisioning Azure resources can take some time.
+
+Subscription: Visual Studio Professional Subscription
+Location: Southeast Asia
+
+You can view detailed progress in the Azure Portal:
+https://portal.azure.com/#view/HubsExtension/DeploymentDetailsBlade/~/overview/id
+
+(✓) Done: Resource group: rg-eshopdev
+(✓) Done: Log Analytics workspace: law-mn6lmqyu7hkig
+(✓) Done: Container Registry: acrmn6lmqyu7hkig
+(✓) Done: Container Apps Environment: cae-mn6lmqyu7hkig
+
+Deploying services (azd deploy)
+
+(✓) Done: Deploying service basket-api
+- Endpoint: https://basket-api.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service catalog-api
+- Endpoint: https://catalog-api.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service eventbus
+- Endpoint: https://eventbus.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service identity-api
+- Endpoint: https://identity-api.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service mobile-bff
+- Endpoint: https://mobile-bff.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service order-processor
+- Endpoint: https://order-processor.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service ordering-api
+- Endpoint: https://ordering-api.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service payment-processor
+- Endpoint: https://payment-processor.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service postgres
+- Endpoint: https://postgres.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service redis
+- Endpoint: https://redis.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service webapp
+- Endpoint: https://webapp.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service webhooks-api
+- Endpoint: https://webhooks-api.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+(✓) Done: Deploying service webhooksclient
+- Endpoint: https://webhooksclient.internal.proudcliff-xxx.southeastasia.azurecontainerapps.io/
+
+Aspire Dashboard: https://aspire-dashboard.ext.proudcliff-xxx.southeastasia.azurecontainerapps.io
+
+SUCCESS: Your up workflow to provision and deploy to Azure completed in 11 minutes 1 second.
+PS C:\dotnet\sample\eShop\src\eShop.AppHost>
+</code></pre>					
+      </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="closePopupFooter">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
   <!-- Embedded JSON data -->
   <script>
     // Embedded JSON data
-    var data = [
+    const data = [
       {
         "Date": "2024-06-01",
-        "Title": "Deployed locally and to the cloud (Azure) for <a href='https://github.com/dotnet/eShop'>eShop</a> Reference Application implementing an e-commerce website using a services-based architecture using <a href='https://learn.microsoft.com/en-us/dotnet/aspire/deployment/azure/aca-deployment-azd-in-depth?tabs=windows'>.NET Aspire</a>. <i class='fa fa-info-circle tool' title='Provision all Azure resources including 15 Container App in 8 minutes. Azure cost spent: ~RM20.'></i>",
+        "Title": "Deployed locally and to the cloud (Azure) for <a href='https://github.com/dotnet/eShop'>eShop</a> Reference Application implementing an e-commerce website using a services-based architecture using <a href='https://learn.microsoft.com/en-us/dotnet/aspire/deployment/azure/aca-deployment-azd-in-depth?tabs=windows'>.NET Aspire</a>. <a href='#' class='openPopup'>Log</a> <i class='fa fa-info-circle tool' title='Provision all Azure resources including 15 Container App in 8 minutes. Azure cost spent: ~RM20.'></i>",
         "Tags": "C#, NET 8, Container registry (1), Container App (15), Container Apps Environment (1), Log Analytics workspace (1), Managed Identity (1), Azure Container Registry (ACR), Azure Developer CLI (azd)",
         "Code": "",
         "Flow": "",
@@ -163,8 +286,17 @@
     ];
 
     $(document).ready(function() {
+      $(document).on("click", ".openPopup", function(event) {
+				event.preventDefault();
+				$("#popup").modal('show');
+			});
+
+			$("#closePopup, #closePopupFooter").on("click", function() {
+				$("#popup").modal('hide');
+			});
+
       // Populate the DataTable
-      var table = $('#tbl').DataTable({
+      const table = $('#tbl').DataTable({
         data: data,
         columns: [
           { data: 'Date' },
