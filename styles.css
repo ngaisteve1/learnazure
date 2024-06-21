@@ -17,3 +17,18 @@ a {
 table.dataTable td {
     vertical-align: top;
 }
+
+#tbl {
+    table-layout: fixed;
+    /* Ensure fixed table layout */
+    width: 100%;
+    /* Ensure table takes full width of container */
+}
+
+#tbl td:nth-child(1) {
+    width: 100px;
+    /* Set a fixed width for the date column */
+    white-space: nowrap;
+    /* Prevent wrapping */
+
+}

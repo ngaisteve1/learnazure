@@ -1,3 +1,4 @@
+// Embedded JSON data
 const data = [
   {
     "Date": "2024-06-01",
@@ -131,8 +132,9 @@ $(document).ready(function () {
         data: 'Date',
         render: function (data, type, row) {
           const date = new Date(data);
-          const options = { year: 'numeric', month: 'short' };
-          return date.toLocaleDateString('en-US', options);
+          const year = date.getFullYear();
+          const month = ('0' + (date.getMonth() + 1)).slice(-2);
+          return `${year}-${month}`;
         }
       },
       {
@@ -172,8 +174,11 @@ $(document).ready(function () {
   $(".year-filter").on("click", function (event) {
     event.preventDefault();
     const year = $(this).data("year");
+
+    // Reset search and sorting before applying new filter
+    table.search("").columns().search("").draw();
+
     table.column(0).search(year, true, false).draw();
-    // After filtering, sort by Date column in descending order
     table.order([0, 'desc']).draw();
   });
 });
