@@ -1,10 +1,9 @@
-// Embedded JSON data
 const data = [
   {
     "Date": "2024-06-01",
     "Title": "Deployed locally and to the cloud (Azure) for <a href='https://github.com/dotnet/eShop'>eShop</a> Reference Application implementing an e-commerce website using a services-based architecture using <a href='https://learn.microsoft.com/en-us/dotnet/aspire/deployment/azure/aca-deployment-azd-in-depth?tabs=windows'>.NET Aspire</a>. Provision all Azure resources including 15 Container App in 11 minutes. Azure cost spent: ~RM20. <a href='#' class='openPopup'>View Log</a></i>",
     "Tags": "C#, NET 8, Container registry (1), Container App (15), Container Apps Environment (1), Log Analytics workspace (1), Managed Identity (1), Azure Container Registry (ACR), Azure Developer CLI (azd)",
-    "Code": "https://github.com/dotnet/eShop",
+    "Code": "",
     "Flow": "",
     "Video": "https://www.youtube.com/watch?v=rJMXSVO_Ris"
   },
