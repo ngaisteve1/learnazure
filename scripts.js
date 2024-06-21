@@ -174,6 +174,8 @@ $(document).ready(function () {
     event.preventDefault();
     const year = $(this).data("year");
     table.column(0).search(year, true, false).draw();
+    // After filtering, sort by Date column in descending order
+    table.order([0, 'desc']).draw();
   });
 });
 
