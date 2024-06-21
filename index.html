@@ -175,9 +175,17 @@
             }
           },
           { data: 'Tags' },
-          { data: 'Code', visible: false }, // Initially hidden
+          { data: 'Code', visible: false,
+            render: function(data, type, row) {
+              return type === 'display' && data ? `<a href="${data}">Code</a>` : data;
+            }
+          },
           { data: 'Flow', visible: false }, // Initially hidden
-          { data: 'Video', visible: false } // Initially hidden
+          { data: 'Video', visible: false,
+            render: function(data, type, row) {
+              return type === 'display' && data ? `<a href="${data}">Video</a>` : data;
+            }
+          }
         ],
         order: [[0, 'desc']],
         paging: false,
