@@ -25,6 +25,11 @@
     This page is from <a href="http://resume.findingsteve.net/">Steve Ngai Resume / CV</a> <a
       href="https://ngaisteve1.github.io/learnazure/?id=s">:)</a>
   </p>
+  <div>
+    <a href="#" class="year-filter" data-year="2024">2024</a> | 
+    <a href="#" class="year-filter" data-year="2023">2023</a> | 
+    <a href="#" class="year-filter" data-year="2022">2022</a>
+  </div>  
   <table id="tbl" class="display" style="width:100%">
     <thead>
       <tr>
@@ -275,3 +280,24 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script src="scripts.js"></script>
+<script>
+  $(document).ready(function() {
+      var table = $('#example').DataTable();
+
+      $('.year-filter').on('click', function(e) {
+          e.preventDefault();
+          var year = $(this).data('year');
+
+          $.fn.dataTable.ext.search.push(
+              function(settings, data, dataIndex) {
+                  var date = data[0]; // Assuming the date is in the second column
+                  var dateYear = new Date(date).getFullYear();
+                  return dateYear == year;
+              }
+          );
+
+          table.draw();
+          $.fn.dataTable.ext.search.pop(); // Remove the filter after drawing
+      });
+  });
+</script>
