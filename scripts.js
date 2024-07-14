@@ -159,7 +159,7 @@ $(document).ready(function () {
         data: 'Video', visible: false,
         render: function (data, type, row) {
           if (type === 'display' && data && Array.isArray(data)) {
-            return data.map(video => `<a href="${video}" target="_blank">Video</a>`).join(', ');
+            return data.map((video, index) => `<a href="${video}" target="_blank">Video ${index + 1}</a>`).join(', ');
           }
           return data;
         }
