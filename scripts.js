@@ -6,7 +6,10 @@ const data = [
     "Tags": "C#, NET 8, Container registry (1), Container App (15), Container Apps Environment (1), Log Analytics workspace (1), Managed Identity (1), Azure Container Registry (ACR), Azure Developer CLI (azd)",
     "Code": "https://github.com/dotnet/eShop",
     "Flow": "",
-    "Video": "https://www.youtube.com/watch?v=rJMXSVO_Ris"
+    "Video": [
+      "https://www.youtube.com/watch?v=rJMXSVO_Ris",
+      "https://youtu.be/ZdWrGjkYHE0"
+    ]
   },
   {
     "Date": "2024-05-01",
@@ -155,7 +158,10 @@ $(document).ready(function () {
       {
         data: 'Video', visible: false,
         render: function (data, type, row) {
-          return type === 'display' && data ? `<a href="${data}">Video</a>` : data;
+          if (type === 'display' && data && Array.isArray(data)) {
+            return data.map(video => `<a href="${video}" target="_blank">Video</a>`).join(', ');
+          }
+          return data;
         }
       }
     ],
