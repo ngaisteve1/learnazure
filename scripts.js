@@ -3,7 +3,7 @@ const data = [
   {
     "Date": "2024-07-01",
     "Title": "Create a Proof of Concept (POC) for Google Ad Manager API Dev Tool.",
-    "Tags": "C#, NET 8, Azure Web App, Azure Function App, Azure Monitor / AppInsights, Azure DevOps CI / CD",
+    "Tags": "C#, NET 8, Azure Web App, Azure SQL Server, Azure Function App, Azure Monitor / AppInsights, Azure DevOps CI / CD",
     "Code": "",
     "Flow": "",
     "Video": ""
