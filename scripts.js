@@ -16,7 +16,7 @@ const data = [
     "Flow": "",
     "Video": [
       "https://www.youtube.com/watch?v=rJMXSVO_Ris",
-      "https://youtu.be/ZdWrGjkYHE0",
+      "https://www.youtube.com/watch?v=rFkIOsg8e5Q",
       "https://www.youtube.com/watch?v=CkKYDJC5Z1E"
     ]
   },
