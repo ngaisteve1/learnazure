@@ -74,7 +74,10 @@ const data = [
     "Tags": "C#, NET 6, Docker, Docker Compose, Microservices, Api gateway",
     "Code": "https://github.com/dotnet-architecture/eShopOnContainers",
     "Flow": "Bug: Clean/Purge data and Factory reset and let it run overnight",
-    "Video": "https://youtu.be/qazYWpOKLU8"
+    "Video":
+      [
+        "https://youtu.be/qazYWpOKLU8"
+      ]
   },
   {
     "Date": "2022-07-30",
@@ -90,7 +93,7 @@ const data = [
     "Tags": "C#, NET 6, Docker, SQL Server",
     "Code": "https://findingsteve.visualstudio.com/_git/v5-dockerComposeAspNetCpre",
     "Flow": "",
-    "Video": "https://youtu.be/-xnEPRsetIM"
+    "Video": ["https://youtu.be/-xnEPRsetIM"]
   },
   {
     "Date": "2022-07-28",
@@ -98,7 +101,7 @@ const data = [
     "Tags": "Azure DevOps (Pipelines CI), C#, NET 6, Web Api, EF Core, XUnit, MOQ",
     "Code": "https://findingsteve.visualstudio.com/_git/cf_api_net_core",
     "Flow": "",
-    "Video": "https://youtu.be/z5P96uXwcG8"
+    "Video": ["https://youtu.be/z5P96uXwcG8"]
   },
   {
     "Date": "2022-07-25",
@@ -106,7 +109,7 @@ const data = [
     "Tags": "Azure DevOps (Pipelines CI), C#, NET 6, Web Api, EF Core, XUnit, MOQ",
     "Code": "https://findingsteve.visualstudio.com/_git/cf_store_api",
     "Flow": "",
-    "Video": "https://youtu.be/7DJzC-4MWD8"
+    "Video": ["https://youtu.be/7DJzC-4MWD8"]
   },
   {
     "Date": "2022-07-24",
@@ -114,7 +117,7 @@ const data = [
     "Tags": "Azure Kubernetes Service (AKS), Azure DevOps (Pipelines CI/CD), C#, NET 6",
     "Code": "",
     "Flow": "",
-    "Video": "https://youtu.be/z5P96uXwcG8"
+    "Video": ["https://youtu.be/z5P96uXwcG8"]
   },
   {
     "Date": "2022-07-24",
@@ -122,7 +125,7 @@ const data = [
     "Tags": "Azure App Service, Docker, Visual Studio Community 2022",
     "Code": "",
     "Flow": "",
-    "Video": "https://youtu.be/jpFS9u4AUf4"
+    "Video": ["https://youtu.be/jpFS9u4AUf4"]
   },
   {
     "Date": "2022-07-23",
@@ -130,7 +133,7 @@ const data = [
     "Tags": "Azure App Service, GitHub Actions CI/CD, C#, ASP.NET Core 5, MVC",
     "Code": "",
     "Flow": "",
-    "Video": "https://youtu.be/M6b8JkGsmAk"
+    "Video": ["https://youtu.be/M6b8JkGsmAk"]
   }
 ];
 
