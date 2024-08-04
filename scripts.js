@@ -1,6 +1,14 @@
 // Embedded JSON data
 const data = [
   {
+    "Date": "2024-08-01",
+    "Title": "Developed a Console Application for YouTube Integration. This application allows for retrieving YouTube playlists and uploading videos to YouTube using C# and .NET 6. The project utilizes API keys and OAuth 2.0 client IDs for secure interactions with YouTube's API.",
+    "Tags": "C#, .NET 6, YouTube API, OAuth 2.0, API Key, Console App",
+    "Code": "https://github.com/ngaisteve1/youtube.api",
+    "Flow": "",
+    "Video": ""
+  },
+  {
     "Date": "2024-07-01",
     "Title": "Created a Proof of Concept (POC) for Google Ad Manager API Dev Tool. It aims to significantly increase productivity by speeding up development and testing processes. This POC also serves as a foundation for creating other POCs, such as .NET 8 migration and exploring Azure services.",
     "Tags": "C#, NET 8, Azure Web App, Azure SQL Server, Azure Function App, Azure Monitor / AppInsights, Azure DevOps CI / CD",
@@ -12,7 +20,7 @@ const data = [
     "Date": "2024-06-01",
     "Title": "Deployed locally and to the cloud (Azure) for eShop Reference Application implementing an e-commerce website using a services-based architecture using <a href='https://learn.microsoft.com/en-us/dotnet/aspire/deployment/azure/aca-deployment-azd-in-depth?tabs=windows'>.NET Aspire</a>. Provision all Azure resources including 15 Container App in 11 minutes. Azure cost spent: ~RM20. <a href='#' class='openPopup'>View Log</a></i>",
     "Tags": "C#, NET 8, Container registry (1), Container App (15), Container Apps Environment (1), Log Analytics workspace (1), Azure Monitor / AppInsights, Managed Identity (1), Azure Container Registry (ACR), Azure Developer CLI (azd), Playwright Tests, Github Actions",
-    "Code": "https://github.com/dotnet/eShop",
+    "Code": "https://github.com/ngaisteve1/eshop",
     "Flow": "",
     "Video": [
       "https://www.youtube.com/watch?v=rJMXSVO_Ris",
