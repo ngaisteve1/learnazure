@@ -1,6 +1,13 @@
 // Embedded JSON data
 const data = [
   {
+    "Date": "2024-10-01",
+    "Title": "Developed a POC for a Serverless Order Processing Workflow Utilizing Azure Functions and Azure Service Bus",
+    "Tags": "C#, .NET 8, Azure Functions, Azure Service Bus, Azure Storage",
+    "Code": "",
+    "Video": ""
+  },
+  {
     "Date": "2024-08-01",
     "Title": "Developed a Console Application for YouTube Integration. This application allows for retrieving YouTube playlists and uploading videos to YouTube using C# and .NET 6. The project utilizes API keys and OAuth 2.0 client IDs for secure interactions with YouTube's API.",
     "Tags": "C#, .NET 6, YouTube API, OAuth 2.0, API Key, Console App",
