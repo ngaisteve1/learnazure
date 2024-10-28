@@ -2,8 +2,8 @@
 const data = [
   {
     "Date": "2024-10-01",
-    "Title": "Developed a POC for a Serverless Order Processing Workflow Utilizing Azure Functions and Azure Service Bus",
-    "Tags": "C#, .NET 8, Azure Functions, Azure Service Bus, Azure Storage",
+    "Title": "Developed a POC which highlights the asynchronous nature of order handling and the integration of Service Bus for messaging.",
+    "Tags": "C#, .NET 8 Isolated, Azure Functions, Azure Service Bus, Azure Storage",
     "Code": "",
     "Video": ""
   },
@@ -23,7 +23,7 @@ const data = [
   },
   {
     "Date": "2024-06-01",
-    "Title": "Deployed locally and to the cloud (Azure) for eShop Reference Application implementing an e-commerce website using a services-based architecture using <a href='https://learn.microsoft.com/en-us/dotnet/aspire/deployment/azure/aca-deployment-azd-in-depth?tabs=windows'>.NET Aspire</a>. Provision all Azure resources including 15 Container App in 11 minutes. Azure cost spent: ~RM20. <a href='#' class='openPopup' data-target='popup20240601'>View Log</a></i>",
+    "Title": "Deployed locally and to the cloud (Azure) for eShop Reference Application implementing an e-commerce website using a services-based architecture using <a href='https://learn.microsoft.com/en-us/dotnet/aspire/deployment/azure/aca-deployment-azd-in-depth?tabs=windows'>.NET Aspire</a>. Provision all Azure resources including 15 Container App in 11 minutes. Azure cost spent: ~RM20. <a href='#' class='openPopup' data-target='#popup20240601'>View Log</a></i>",
     "Tags": "C#, NET 8, Container registry (1), Container App (15), Container Apps Environment (1), Log Analytics workspace (1), Azure Monitor / AppInsights, Managed Identity (1), Azure Container Registry (ACR), Azure Developer CLI (azd), Playwright Tests, Github Actions",
     "Code": "https://github.com/ngaisteve1/eshop",
     "Video": [
