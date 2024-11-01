@@ -2,7 +2,7 @@
 const data = [
   {
     "Date": "2024-10-01",
-    "Title": "Developed a POC which highlights the asynchronous nature of order handling and the integration of Service Bus for messaging.",
+    "Title": "Developed a POC which highlights the asynchronous nature of order handling and the integration of Service Bus for messaging, and persistence of order data in Azure Table Storage.",
     "Tags": "C#, .NET 8 Isolated, Azure Functions, Azure Service Bus, Azure Storage",
     "Code": "https://github.com/ngaisteve1/OrderProcessingServiceBus",
     "Video": ["https://youtu.be/tgI-KnHPOEo"]
