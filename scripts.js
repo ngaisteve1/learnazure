@@ -3,7 +3,7 @@ const data = [
   {
     "Date": "2024-11-01",
     "Title": "Developed a POC for Real-Time Weather Forecast Retrieval Using OpenWeatherMap API and Azure Key Vault Integration",
-    "Tags": "C#, .NET 8, Azure Key Vault",
+    "Tags": "C#, .NET 8, Azure Key Vault, Vault access policy",
     "Code": "https://github.com/ngaisteve1/WeatherForecastKeyVault",
     "Video": ""
   },
