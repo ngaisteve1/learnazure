@@ -1,6 +1,13 @@
 // Embedded JSON data
 const data = [
   {
+    "Date": "2024-11-01",
+    "Title": "Developed a POC for Real-Time Weather Forecast Retrieval Using OpenWeatherMap API and Azure Key Vault Integration",
+    "Tags": "C#, .NET 8, Azure Key Vault",
+    "Code": "https://github.com/ngaisteve1/WeatherForecastKeyVault",
+    "Video": ""
+  },
+  {
     "Date": "2024-10-01",
     "Title": "Developed a POC which highlights the asynchronous nature of order handling and the integration of Service Bus for messaging, and persistence of order data in Azure Table Storage.",
     "Tags": "C#, .NET 8 Isolated, Azure Functions, Azure Service Bus, Azure Storage",
